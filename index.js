@@ -58,6 +58,7 @@ function transitionMetalsId() {
     for (var i = 0; i < transitionMetals.length; i++) {
         transitionMetals[i].style.transform = "scale(1.1)";
         transitionMetals[i].style.opacity = "90%";
+        transitionMetals[i].style.gap = "50%";
      }
 }
 document.getElementById("transitionMetalsId").onclick = transitionMetalsId;
@@ -106,6 +107,7 @@ function clearAll(){
     for (var i = 0; i < allElements.length; i++) {
         allElements[i].style.transform = "scale(1) translate(0px, 0px)";
         allElements[i].style.opacity = "100%";
+        allElements[i].style.border = "none";
     }
     document.getElementById("alkaliRadio").checked = false;
     document.getElementById("metalloidsRadio").checked = false;
@@ -119,3 +121,5 @@ function clearAll(){
     document.getElementById("lanthanidesId").checked = false;
 }
 document.getElementById("untoggleId").onclick = clearAll;
+
+

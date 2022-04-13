@@ -12,7 +12,7 @@
     --lanthanides: rgb(252, 155, 171);
 }
 body{
-    background-color: black;
+    background-color: rgb(147, 147, 147);
 }
 
 .container{
@@ -39,15 +39,14 @@ body{
     display: flex;
     flex-direction: column;
 }
-.row4{
-    z-index: 1;
-}
+
 .square {
     border: 1px solid rgb(0, 0, 0);
     box-shadow:  0 0 2px 2px rgba(0, 0, 0, 0.5);
     width: 65px;
     height: 65px;    
     border-radius: 5px;
+    
 }
 .tableOrder{
     margin: 0 auto;
@@ -114,10 +113,11 @@ body{
     background-color: var(--NobleGases);
 }
 .square:hover{
-    transform: translate(10px, 10px) scale(1.5);
     box-shadow: inset  0 0 2px 2px rgba(0, 0, 0, 0.5);
     opacity: 90%;
-    margin: 2px 2px;
+    z-index: 3;
+    transform: translate(10px, 10px) scale(1.5);
+
 }
 input[type="radio"]{
     color: rgb(255, 89, 0);
