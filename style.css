@@ -11,6 +11,9 @@
     --postTransitionMetals: green;
     --lanthanides: rgb(252, 155, 171);
 }
+body{
+    background-color: black;
+}
 
 .container{
     width: auto;
@@ -36,8 +39,11 @@
     display: flex;
     flex-direction: column;
 }
+.row4{
+    z-index: 1;
+}
 .square {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     box-shadow:  0 0 2px 2px rgba(0, 0, 0, 0.5);
     width: 65px;
     height: 65px;    
@@ -51,6 +57,7 @@
     margin: 0 auto;
     padding: 0 auto;
     text-align: center;
+    text-shadow: 1.5px 1.5px rgb(71, 70, 70);
 }
 .fullName{
     margin: 0 auto;
@@ -64,7 +71,9 @@
     width: 40em;
     display: flex;
     margin-top: 30px;
-    
+    background-color: bisque;
+    border: 1px solid black;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 .leftid{
     flex-direction: column;
@@ -107,6 +116,8 @@
 .square:hover{
     transform: translate(10px, 10px) scale(1.5);
     box-shadow: inset  0 0 2px 2px rgba(0, 0, 0, 0.5);
+    opacity: 90%;
+    margin: 2px 2px;
 }
 input[type="radio"]{
     color: rgb(255, 89, 0);
